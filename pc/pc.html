@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+  <html lang="en"> 
+
+    <head>
+        <!--Meta-->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=640"/>
+
+
+        <!--styles folders-->
+      <link rel="stylesheet" href="pc-styles/pc-general.css">
+
+
+        <!--Font Styles-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+      <title> Mortgage Calculator </title>
+
+      <style>
+
+      </style>
+
+
+    </head>
+
+    <body>
+      <main>
+        <div class="calculator-container">
+
+            <!-- Left Half -->
+          <div class="left-half">
+
+              <!-- Left Half Header -->
+            <div class="left-header">
+
+              <h1>Mortgage Calculator</h1>
+
+              <p class="clear-all">Clear All</p>
+
+            </div>
+
+              <!-- Left Half Mortgage Amount -->
+            <div class="mortgage-amount">
+              
+              <p>Mortgage Amount</p>
+
+              <div class="amount-input-container">
+
+                <div class="money-type-container"> <p>£</p> </div>
+
+                <input type="text"/>
+
+              </div>
+
+            </div>
+
+
+              <!-- Left Half Mortgage Term and Interest -->
+            <div class="term-and-interest">
+
+                <!-- Left Half Mortgage Term -->
+              <div class="mortgage-interest">
+
+              <p>Mortgage Term</p>
+
+              <div class="term-input-container">
+
+                <input type="text"/>
+
+                <div class="years-amount-container"> <p>years</p> </div>
+
+              </div>
+
+              </div>
+
+                <!-- Left Half Interest Rate -->
+              <div class="mortgage-interest">
+
+              <p>Interest Rate</p>
+
+              <div class="interest-input-container">
+
+                <input type="text"/>
+
+                <div class="interest-amount-container"> <p>%</p> </div>
+
+              </div>
+
+              </div>
+            </div>
+
+              <!-- Left Half Mortgage Type-->
+            <div class="mortgage-type">
+
+              <p>Mortgage Type</p>
+
+              <label for="repayment">
+                <div value="repayment" class="repayment-interest" tabindex="0">
+
+                  <input id="repayment" name="radio" type="radio"/>
+
+                  <p>Repayment</p>
+
+                </div>
+              </label>
+              <label for="interest">
+                <div value="interest" class="repayment-interest" tabindex="1">
+
+                  <input id="interest" name="radio" type="radio"/>
+
+                  <p>Interest Only</p>
+                
+                </div>
+              </label>
+
+            </div>
+
+            <button class="calculator-button">
+              <img src="logos/icon-calculator.svg">
+              <p>Calculate Repayments</p>
+            </button>
+
+          </div>
+
+          
+
+            <!-- Right Half -->
+          <div class="right-half">
+
+            <h1>Your results</h1>
+
+            <p>Your results are shown below based on the information you provided. To adjust the results, edit the form and click "calculate repayments" again.</p>
+            
+            <div class="initial-calculated-background">
+
+              <div class="final-calculated-background">
+
+                <p>Your monthly repayments</p>
+
+                <p class="amount-paid">£1,797.74</p>
+
+                <p class="total-paid-term">Total you'll pay over the term</p>
+
+                <p class="total-paid">£539,322.94</p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </main>
+    </body>
+
+  </html>
