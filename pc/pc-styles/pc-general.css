@@ -1,8 +1,5 @@
 body {
   background-color: rgb(227,244,252);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 680px;
   font-family: Plus Jakarta Sans;
   cursor: default;
@@ -11,8 +8,9 @@ body {
 .calculator-container {
   display: flex;
   background-color: white;
-  width: 1000px;
+  width: 65rem;
   border-radius: 15px;
+  margin: auto;
 }
 
 h1 {
@@ -305,4 +303,58 @@ input[type=radio] {
   color: white;
   font-size: 25px;
   font-weight: 600;
+}
+
+@media only screen and (max-width: 420px) {
+ body { 
+  height: unset;
+  margin: 0;
+ }
+  .calculator-container {
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    border-radius: 0;
+    margin: 0;
+  }
+  .left-half {
+    width: 21rem;
+  }
+  .money-type-container {
+    width: 15%;
+  }
+  .term-input-container input{
+    width: 75%;
+  }
+  .years-amount-container{
+    width: 25%;
+  
+  }
+  .left-header {
+    flex-direction: column;
+    align-items: start;
+    gap: 0.7rem;
+  }
+
+  .term-and-interest {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .mortgage-interest {
+    width: 100%;
+  }
+  .calculator-button {
+    width: 100%;
+  }
+  .interest-amount-container {
+    width: 15%;
+  }
+  .interest-input-container input {
+    width: 85%;
+  }
+
+  .right-half {
+    width: 21rem;
+    border-radius: 0;
+  }
 }
