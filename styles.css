@@ -327,6 +327,7 @@ input[type=radio] {
     border-radius: 0;
     margin: 0;
   }
+    /* left half */
   .left-half {
     width: 21rem;
   }
@@ -363,59 +364,131 @@ input[type=radio] {
     width: 85%;
   }
 
+    /* Right half */
   .right-half {
     width: 21rem;
     border-radius: 0;
   }
 }
 
+  /* Tablet responsive design */
+  @media only screen and (max-width: 768px) {
+    body {
+      height: unset;
+    }
+
+    /* left half */
+    .calculator-container {
+      width: 35rem;
+    }
+    .left-header {
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+    .left-half h1 {
+      font-size: 22px;
+      white-space: nowrap;
+    }
+    .left-half {
+      padding: 20px;
+ 
+    }
+    .mortgage-amount p {
+      font-size: 16px;
+      margin-bottom: 7px;
+      text-align: center;
+    }
+    .mortgage-amount {
+      margin-bottom: 15px;
+    }
+    .amount-input-container {
+      height: 45px;
+    }
+    .money-type-container p {
+      margin: 0;
+    }
+    .term-input-container {
+      height: 45px;
+      
+    }
+    .interest-input-container {
+      height: 45px;
+      bottom: 0;
+      
+    }
+    .term-and-interest {
+      margin-bottom: 15px;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .repayment-interest {
+      height: 45px;
+      width: 91.5%;
+    }
+    .mortgage-interest p {
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 7px;
+
+    }
+    .mortgage-interest {
+      width: 100%;
+      gap: 10px;
+    }
+    .calculator-button {
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 0;
+      height: 50px;
+    }
+    .calculator-button p {
+      font-size: 15px;
+    }
+    .years-amount-container p {
+      font-size: 15px;
+    }
+    .mortgage-type p {
+      font-size: 15px;
+      text-align: center;
+      margin-bottom: 7px;
+    }
+    .repayment-interest p {
+      margin-bottom: 0;
+    }
+
+    /* right half */
+
+    .right-half {
+      padding: 20px;
+    }
+
+    .right-half h1 {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    .final-calculated-background {
+      padding: 15px;
+    }
+    .final-calculated-background p {
+      text-align: center;
+    }
+    .amount-paid {
+      font-size: 35px;
+      padding-bottom: 40px;
+    }
+    .initial-calculated-background {
+      height: 300px;
+    }
+    .total-paid-term {
+      white-space: nowrap;
+      margin-bottom: 25px;
+      margin-top: 40px;
+    }
+
+  }
+
   /* smaller laptop screen responsive design */
-@media only screen and (max-width: 1024px) {
-  .calculator-container {
-    width: 85%;
-  }
 
-  .left-half {
-    padding: 20px 30px 20px 30px;
-  }
-  .mortgage-amount {
-    margin-bottom: 20px;
-  }
-  .term-and-interest {
-    margin-bottom: 20px;
-  }
-  .calculator-button {
-    margin-top: 30px;
-  }
-  .right-half {
-    padding: 20px 30px 20px 30px;
-  }
-}
 
-  /* even smaller laptop screen responsive design */
-@media only screen and (max-width: 980px) {
-  .calculator-container {
-    width: 85%;
-  }
-  .left-header {
-    flex-direction: column;
-    align-items: start;
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-  .left-half {
-    padding: 20px 30px 20px 30px;
-  }
-  .mortgage-amount {
-    margin-bottom: 20px;
-  }
-  .term-and-interest {
-    margin-bottom: 20px;
-  }
-  .calculator-button {
-    margin-top: 30px;
-  }
-  .right-half {
-    padding: 20px 30px 20px 30px;
-  }
-}
