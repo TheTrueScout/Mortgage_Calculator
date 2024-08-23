@@ -314,7 +314,7 @@ input[type=radio] {
   font-size: 25px;
   font-weight: 600;
 }
-
+  /* Mobile responsive design */
 @media only screen and (max-width: 420px) {
  body { 
   height: unset;
@@ -366,5 +366,56 @@ input[type=radio] {
   .right-half {
     width: 21rem;
     border-radius: 0;
+  }
+}
+
+  /* smaller laptop screen responsive design */
+@media only screen and (max-width: 1024px) {
+  .calculator-container {
+    width: 85%;
+  }
+
+  .left-half {
+    padding: 20px 30px 20px 30px;
+  }
+  .mortgage-amount {
+    margin-bottom: 20px;
+  }
+  .term-and-interest {
+    margin-bottom: 20px;
+  }
+  .calculator-button {
+    margin-top: 30px;
+  }
+  .right-half {
+    padding: 20px 30px 20px 30px;
+  }
+}
+
+  /* even smaller laptop screen responsive design */
+@media only screen and (max-width: 980px) {
+  .calculator-container {
+    width: 85%;
+  }
+  .left-header {
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .left-half {
+    padding: 20px 30px 20px 30px;
+  }
+  .mortgage-amount {
+    margin-bottom: 20px;
+  }
+  .term-and-interest {
+    margin-bottom: 20px;
+  }
+  .calculator-button {
+    margin-top: 30px;
+  }
+  .right-half {
+    padding: 20px 30px 20px 30px;
   }
 }
