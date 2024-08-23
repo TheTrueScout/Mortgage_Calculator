@@ -108,6 +108,8 @@ p {
 .amount-input-container input {
   width: 85%;
   justify-content: right;
+  height: 100%;
+  box-sizing: border-box;
 }
 
   /* Left Section Mortgage Term and Interest Rate */
@@ -139,6 +141,8 @@ p {
 .term-input-container input {
   display: flex;
   width: 60%;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 .years-amount-container {
@@ -181,6 +185,8 @@ p {
 .interest-input-container input {
   display: flex;
   width: 70%;
+  height: 100%;
+  box-sizing: border-box;
 }
 
   /* Left Section Mortgage Type */
