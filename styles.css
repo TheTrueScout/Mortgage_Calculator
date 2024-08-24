@@ -408,14 +408,30 @@ input[type=radio] {
     .money-type-container p {
       margin: 0;
     }
+    .money-type-container {
+      width: 20%;
+    }
+    .amount-input-container input {
+      width: 80%;
+    }
     .term-input-container {
       height: 45px;
-      
+      margin-top: 7px;
+    }
+    .interest-input-container input {
+      height: 45px;
+      width: 80%;
     }
     .interest-input-container {
       height: 45px;
-      bottom: 0;
-      
+      margin-top: 7px;
+    }
+
+    .interest-amount-container {
+      width: 20%;
+    }
+    .interest-amount-container p {
+      margin: 0;
     }
     .term-and-interest {
       margin-bottom: 15px;
@@ -429,9 +445,9 @@ input[type=radio] {
     .mortgage-interest p {
       font-size: 16px;
       text-align: center;
-      margin-bottom: 7px;
-
+      margin: 0;
     }
+    
     .mortgage-interest {
       width: 100%;
       gap: 10px;
@@ -447,6 +463,13 @@ input[type=radio] {
     }
     .years-amount-container p {
       font-size: 15px;
+      margin: 0;
+    }
+    .years-amount-container {
+      width: 30%;
+    }
+    .term-input-container input {
+      width: 70%;
     }
     .mortgage-type p {
       font-size: 15px;
