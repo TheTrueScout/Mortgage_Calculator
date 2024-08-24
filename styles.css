@@ -314,7 +314,7 @@ input[type=radio] {
   font-size: 25px;
   font-weight: 600;
 }
-  /* Mobile responsive design */
+  /* Mobile responsive design 420px */
 @media only screen and (max-width: 420px) {
  body { 
   height: unset;
@@ -371,7 +371,7 @@ input[type=radio] {
   }
 }
 
-  /* Tablet responsive design */
+  /* Tablet responsive design 768px */
   @media only screen and (max-width: 768px) {
     body {
       height: unset;
@@ -512,6 +512,61 @@ input[type=radio] {
 
   }
 
-  /* smaller laptop screen responsive design */
+  /* smaller laptop screen responsive design 1024px */
+  @media only screen and (max-width: 1024px) {
+    body {
+      height: unset;
+    }
+    .calculator-container {
+      width: 50rem;
+      height: unset;
+    }
 
+      /* left half */
+    .left-header h1 {
+      font-size: 22px;
+    }
+    .left-header p {
+      font-size: 15px;
+    }
+    .left-header {
+      margin-bottom: 20px;
+    }
+    .left-half {
+      padding: 25px 35px 25px 35px;
+    }
+    .mortgage-amount {
+      margin-bottom: 20px;
+    }
+    .term-and-interest {
+      margin-bottom: 20px;
+    }
+    .calculator-button {
+      margin-top: 30px;
+    }
+    .interest-amount-container {
+      width: 35%;
+    }
+    .interest-input-container input {
+      width: 65%;
+    }
+
+    /* right half */
+    .right-half {
+      padding: 25px 35px 25px 35px;
+    }
+    .right-half h1 {
+      font-size: 22px;
+    }
+    .amount-paid {
+      margin-top: 20px;
+    }
+    .total-paid-term {
+      margin-top: 30px;
+    }
+    .initial-calculated-background {
+      height: 300px;
+    }
+
+  }
 
