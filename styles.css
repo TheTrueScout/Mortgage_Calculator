@@ -314,15 +314,15 @@ input[type=radio] {
   font-size: 25px;
   font-weight: 600;
 }
-  /* Mobile responsive design 420px */
-@media only screen and (max-width: 420px) {
+  /* Mobile responsive design 425px */
+@media only screen and (max-width: 425px) {
  body { 
   height: unset;
   margin: 0;
  }
   .calculator-container {
     flex-direction: column;
-    width: 100%;
+    width: 100% !important;
     margin: auto;
     border-radius: 0;
     margin: 0;
